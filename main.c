@@ -8,10 +8,10 @@ int sum(int a,int b){
 	return c;
 }
 int main(){
+	int x;
     printf("this is the first seasion\n");
     //pln();
     //printf("this is the 3 seasion\n");
-    int x;
     x=sum(1,4);
     printf("%d",x);
     return 0;

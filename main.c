@@ -5,7 +5,7 @@ void pln(){
 
 int main(){
     printf("this is the first seasion\n");
-    pln();
+    //pln();
     printf("this is the 3 seasion\n");
     return 0;
 }

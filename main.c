@@ -6,6 +6,6 @@ void pln(){
 int main(){
     printf("this is the first seasion\n");
     //pln();
-    printf("this is the 3 seasion\n");
+    //printf("this is the 3 seasion\n");
     return 0;
 }

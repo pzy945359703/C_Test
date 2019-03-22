@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Start";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Start</h2>
+<div id="carouselcontainter" class="carousel" data-ride="carousel" style="width:100%;height:auto">
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#carouselcontainter" data-slide-to="0">1</li>
+        <li data-target="#carouselcontainter" data-slide-to="1">2</li>
+        <li data-target="#carouselcontainter" data-slide-to="2">3</li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="##">
+                <img src="~/Content/1.jpg" />
+            </a>
+        </div>
+        <div class="item">
+            <a href="##">
+                <img src="~/Content/2.jpg" />
+            </a>
+        </div>
+        <div class="item">
+            <a href="##">
+                <img src="~/Content/3.jpg" />
+                <div class="carousel-caption">
+                    <h3>精彩在WOW！</h3>
+                </div>
+            </a>
+        </div>
+        <a class="left carousel-control" href="#carouselcontainter" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carouselcontainter" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+@section scripts{
+    <script>
+      $(function () {
+          $("#carouselcontainter").carousel({
+              interval: 500
+          })
+          $(function () {
+              $().carousel('pause')
+          })
+      })
+    </script>
+}
